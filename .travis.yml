@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+# Before upgrade pip and pytest
+- pip install --upgrade pip
+- pip install pytest
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script: pytest
